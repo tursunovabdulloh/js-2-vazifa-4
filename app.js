@@ -9,10 +9,10 @@ function randomColor() {
 }
 function gradus() {
   let gradus1 = Math.floor(Math.random() * 180);
-  return gradus1;
+  return `${gradus1}deg`;
 }
 button1.style.backgroundColor = randomColor();
-button1.style.backgroundImage = `linear-gradient( 45deg, ${randomColor()}, ${randomColor()}, ${randomColor()})`;
+button1.style.backgroundImage = `linear-gradient( ${gradus()}, ${randomColor()}, ${randomColor()}, ${randomColor()})`;
 
 function randomColor2() {
   let rang1 = Math.floor(Math.random() * 255);
@@ -25,4 +25,4 @@ function gradus2() {
   return gradus1;
 }
 button2.style.backgroundColor = randomColor2();
-button2.style.backgroundImage = `linear-gradient( 85deg, ${randomColor()}, ${randomColor()}, ${randomColor()})`;
+button2.style.backgroundImage = `linear-gradient( ${gradus()}, ${randomColor()}, ${randomColor()}, ${randomColor()})`;
